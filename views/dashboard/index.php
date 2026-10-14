@@ -6,8 +6,8 @@
 //        'doughnut' (rosca) ou 'pie' (pizza)
 // =============================================================================
 $configMeuIndicador = [
-    'titulo'   => 'Meu indicador',
-    'pergunta' => 'Qual pergunta este gráfico responde?',
+    'titulo'   => 'Estabelecimentos com mais não conformidades',
+    'pergunta' => 'Quais os 10 estabelecimentos com mais não conformidades?',
     'tipo'     => 'bar',
 ];
 // =============================================================================

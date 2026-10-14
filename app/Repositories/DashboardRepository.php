@@ -60,9 +60,17 @@ class DashboardRepository
     // =========================================================================
     public function meuIndicador(): array
     {
-        return $this->consultar("
-            SELECT 'Substitua esta consulta' AS rotulo,
-                   0                         AS valor
+            return $this->consultar("
+        SELECT e.razao_social AS razao_social,
+               e.bairro       AS bairro,
+               COUNT(*) FILTER (WHERE iv.status = 'nao_conforme') AS nao_conformidades,
+               COUNT(*) FILTER (WHERE iv.severidade = 'critico')  AS criticas
+          FROM public.itens_vistoria iv
+          JOIN public.vistorias v        ON v.id = iv.vistoria_id
+          JOIN public.estabelecimentos e ON e.id = v.estabelecimento_id
+         GROUP BY e.id, e.razao_social, e.bairro
+         ORDER BY nao_conformidades DESC
+         LIMIT 10
         ");
     }
 }
