@@ -46,10 +46,10 @@ O gráfico e a tabela são montados automaticamente a partir do resultado da con
 
 > Aluno: preencha esta seção no seu branch.
 
-- **Aluno(a):** _nome e RA_
-- **Indicador:** _ex.: I03 — Vistorias por tipo de estabelecimento_
-- **Pergunta que responde:** _..._
-- **Tipo de gráfico:** _..._
+- **Aluno(a):** Guilherme Gomes Ferreira — RA26001393-2 (Grupo 10)
+- **Indicador:** I06 — Ranking dos estabelecimentos com mais não conformidades
+- **Pergunta que responde:**Quais os 10 estabelecimentos com mais não conformidades?
+- **Tipo de gráfico:**Barras  
 
 ---
 
